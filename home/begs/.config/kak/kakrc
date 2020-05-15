@@ -1,0 +1,35 @@
+source "%val{config}/plugins/plug.kak/rc/plug.kak"
+
+plug "lePerdu/kakboard" %{
+        hook global WinCreate .* %{ kakboard-enable }
+}
+
+plug "andreyorst/powerline.kak" defer powerline %{
+    #set-option global powerline_format 'git bufname filetype mode_info line_column position'
+    #powerline-toggle line_column off
+    powerline-theme nord
+    } config %{
+    powerline-start
+}
+
+
+plug "abuffseagull/nord.kak" theme %{ colorscheme nord }
+
+plug "occivink/kakoune-sudo-write"
+
+plug "gspia/kakoune-haskellutils" %{
+    map global user h ':enter-user-mode hlint<ret>' -docstring "hlint mode"
+    map global user H ':enter-user-mode hdevtools<ret>' -docstring "hdevtools mode"
+}
+
+hook global InsertCompletionShow .* %{
+  map window insert <tab> <c-n>
+  map window insert <s-tab> <c-p>
+}
+
+hook global InsertCompletionHide .* %{
+  unmap window insert <tab> <c-n>
+  unmap window insert <s-tab> <c-p>
+}
+
+add-highlighter global/ number-lines
