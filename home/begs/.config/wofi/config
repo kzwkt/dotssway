@@ -1,0 +1,7 @@
+show=drun
+width=600
+height=300
+allow_images=true
+allow_markup=true
+term=alacritty
+image_size=20
