@@ -15,10 +15,12 @@ Feel free to use, don't forget to change some stuff like default user etc.
   - swaylock
   - mako
 - alacritty
+  - xdg-utils
 - waybar
   - keyboard layout script (if unneeded, remove such module from config)
   - cmst
 - wofi
+- kakoune
 - connman
 - FiraCode and Awesome fonts
 - maybe something else
