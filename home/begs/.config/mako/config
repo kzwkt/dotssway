@@ -1,0 +1,7 @@
+background-color=#2e3440
+text-color=#eceff4
+border-size=3
+border-color=#d8dee9
+default-timeout=3000
+font=FiraCode 10
+#progress-color=source #4c566a
