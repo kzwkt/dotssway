@@ -3,6 +3,7 @@
 Feel free to use, don't forget to change some stuff like default user etc. 
 ## Notes:
 - To have brightness control working add your user to *video* group
+
 ## List of dependencies (maybe unfull):
 - sway
   - grim
