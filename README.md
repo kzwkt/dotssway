@@ -2,7 +2,7 @@
 *And not only them.* Made to match [Nord color palette](https://github.com/arcticicestudio/nord). 
 Feel free to use, don't forget to change some stuff like default user etc. 
 ## Screenshot:
-![screenshot](https://hg.sr.ht/~begs/dotfiles/browse/home/begs/screenshots/swaynord.png?rev=default)
+![screenshot](https://imgur.com/a/UPfgbsk)
 ## Notes:
 - To have brightness control working add your user to *video* group
 
