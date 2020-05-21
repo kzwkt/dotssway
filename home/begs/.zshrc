@@ -119,6 +119,9 @@ source $ZSH/oh-my-zsh.sh
 # Set Vi keymap
 bindkey -v
 
+# Nord theme dircolors
+test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
+
 # Fix keymap
 # bindkey '^[[3~' delete-char
 
@@ -159,3 +162,5 @@ bindkey -M vicmd "j" down-line-or-beginning-search
 
 # Run Firefox native under Wayland
 # export MOZ_ENABLE_WAYLAND=1
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
