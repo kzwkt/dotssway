@@ -25,5 +25,6 @@ Feel free to use, don't forget to change some stuff like default user etc.
 - wofi
 - kakoune
 - connman
+- tmux
 - FiraCode and Awesome fonts
 - maybe something else
