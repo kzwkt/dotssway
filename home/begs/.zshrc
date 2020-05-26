@@ -164,3 +164,5 @@ bindkey -M vicmd "j" down-line-or-beginning-search
 # export MOZ_ENABLE_WAYLAND=1
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+
+clear
