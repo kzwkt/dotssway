@@ -27,7 +27,8 @@ bindsym $mod+Insert exec $locker
 ### Output configuration
 #
 # Wallpaper (you may change it to yout liking)
-output * bg ~/wallpaper/voidyuri.png fill
+#output * bg ~/wallpaper/voidyuri.png fill
+output * bg ~/wallpaper/nordmountain.jpg fill
 #
 # Example configuration:
 #
@@ -265,5 +266,8 @@ exec_always {
     gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode 10'
     #gsettings set $gnome-schema cursor-theme 'Your cursor Theme'
 }
+
+# Run pure wayland session
+# xwayland disable
 
 include @sysconfdir@/sway/config.d/*
