@@ -83,7 +83,8 @@
 
     "clock#date": {
         "interval": 20,
-        "format": "{:%e %b %Y}", // Icon: calendar-alt
+        //"format": "{:%e %b %Y}", // Icon: calendar-alt
+		"format": "{:%e %b 20%y}",
         //"tooltip-format": "{:%e %B %Y}"
         "tooltip": false
     },
