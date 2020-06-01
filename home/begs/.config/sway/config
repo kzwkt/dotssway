@@ -101,9 +101,9 @@ default_floating_border none
     bindsym XF86MonBrightnessUp exec light -A 5
 
     # Volume control
-    bindsym XF86AudioRaiseVolume exec amixer set Master 1%+ && pkill -x -RTMIN+11 waybar
-    bindsym XF86AudioLowerVolume exec amixer set Master 1%- && pkill -x -RTMIN+11 waybar
-    bindsym XF86AudioMute exec amixer set Master toggle
+    bindsym XF86AudioRaiseVolume exec amixer set Master 1+ && pkill -x -RTMIN+11 waybar
+    bindsym XF86AudioLowerVolume exec amixer set Master 1- && pkill -x -RTMIN+11 waybar
+    bindsym XF86AudioMute exec amixer set Master toggle && pkill -x -RTMIN+11 waybar
     #bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
     
     # Make a screenshot & copy to clipboard (of a selectable area via Shift+Print)
