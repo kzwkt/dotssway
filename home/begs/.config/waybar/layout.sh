@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/usr/bin/env bash
 
 swaymsg \
   --type get_inputs | \
