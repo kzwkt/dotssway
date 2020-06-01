@@ -124,7 +124,7 @@
         "format-ethernet": "{ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "Disconnected",
         "tooltip-format": "{ifname}: {ipaddr}",
-	"on-click": "swaymsg exec cmst"
+	"on-click": "cmst"
     },
 
     "sway/mode": {
