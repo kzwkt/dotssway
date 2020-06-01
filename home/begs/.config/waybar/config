@@ -29,7 +29,7 @@
     //],
     "modules-right": [
         "custom/arrow1",
-	"custom/alsa",
+        "custom/alsa",
         "custom/arrow2",
         "network",
         "custom/arrow3",
