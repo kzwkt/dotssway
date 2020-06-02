@@ -78,7 +78,7 @@
     "clock#date": {
         "interval": 20,
         //"format": "{:%e %b %Y}", // Icon: calendar-alt
-		"format": "{:%e %b 20%y}",
+		"format": "{:%e %b 20%y}", // dirty workaround
         //"tooltip-format": "{:%e %B %Y}"
         "tooltip": false
     },
@@ -97,7 +97,7 @@
       "exec": "~/.config/waybar/layout.sh",
       // Interval set only as a fallback, as the value is updated by signal
       //"interval": 5,
-      "format": "{}", // Icon: keyboard
+      "format": " {}", // Icon: keyboard
       // Signal sent by Sway key binding (~/.config/sway/key-bindings)
       "signal": 1, // SIGHUP
       "tooltip": false
@@ -169,7 +169,8 @@
     "temperature": {
       "critical-threshold": 80,
       "interval": 5,
-      "format": "{temperatureC}°C",
+      //"format": "{icon} {temperatureC}°C",
+	  "format": "{icon} {temperatureC}°",
       "format-icons": [
           "", // Icon: temperature-empty
           "", // Icon: temperature-quarter
