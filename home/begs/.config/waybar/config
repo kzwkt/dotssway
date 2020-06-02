@@ -1,6 +1,6 @@
 // =============================================================================
 //
-// Waybar configuration
+// Waybar configuration (https://hg.sr.ht/~begs/dotfiles)
 //
 // Configuration reference: https://github.com/Alexays/Waybar/wiki/Configuration
 //
@@ -134,7 +134,7 @@
 
     "sway/workspaces": {
         "all-outputs": false,
-        "disable-scroll": true,
+        "disable-scroll": false,
         "format": "{name}",
         "format-icons": {
             "1:www": "龜", // Icon: firefox-browser
