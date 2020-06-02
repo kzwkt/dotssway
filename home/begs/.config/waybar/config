@@ -58,7 +58,7 @@
             "critical": 15
         },
         "format": " {capacity}%", // Icon: bolt
-        "format-discharging": "{capacity}%",
+        "format-discharging": "{icon} {capacity}%",
         "format-icons": [
             "", // Icon: battery-full
             "", // Icon: battery-three-quarters
