@@ -12,21 +12,19 @@
     // -------------------------------------------------------------------------
 
     "layer": "top",
-
     "position": "top",
-
-    // If height property would be not present, it'd be calculated dynamically
     "height": 22,
-    //"width": 1366,
 
     "modules-left": [
         "sway/workspaces",
         "custom/arrow10"
         //"sway/mode"
     ],
+
     //"modules-center": [
     //    "sway/window"
     //],
+
     "modules-right": [
         "custom/arrow1",
         "custom/alsa",
@@ -49,7 +47,6 @@
         "clock#time"
     ],
 
-
     // -------------------------------------------------------------------------
     // Modules
     // -------------------------------------------------------------------------
@@ -60,9 +57,7 @@
             "warning": 30,
             "critical": 15
         },
-        // Connected to AC
         "format": " {capacity}%", // Icon: bolt
-        // Not connected to AC
         "format-discharging": "{capacity}%",
         "format-icons": [
             "", // Icon: battery-full
@@ -76,7 +71,6 @@
 
     "clock#time": {
         "interval": 10,
-        //"format": "{:%H:%M:%S}",
         "format": "{:%H:%M}",
         "tooltip": false
     },
@@ -123,8 +117,9 @@
         "format-wifi": "{essid} ({signalStrength}%)", // Icon: wifi
         "format-ethernet": "{ifname}: {ipaddr}/{cidr}", // Icon: ethernet
         "format-disconnected": "Disconnected",
-        "tooltip-format": "{ifname}: {ipaddr}",
-	"on-click": "cmst"
+        //"tooltip-format": "{ifname}: {ipaddr}",
+		"tooltip": false,
+	    "on-click": "cmst"
     },
 
     "sway/mode": {
@@ -154,7 +149,7 @@
     },
 
     "pulseaudio": {
-        //"scroll-step": 1,
+        "scroll-step": 1,
         "format": "{icon} {volume}%",
         "format-bluetooth": "{icon} {volume}%",
         "format-muted": "",
@@ -181,12 +176,7 @@
           "", // Icon: temperature-three-quarters
           ""  // Icon: temperature-full
       ],
-      "tooltip": true
-    },
-
-    "custom/layout": {
-      //"format": "{}",
-      "exec": "~/layout.sh"
+      "tooltip": false
     },
 
     "custom/alsa": {
