@@ -105,6 +105,11 @@ default_floating_border none
     bindsym XF86AudioLowerVolume exec amixer set Master 1- && pkill -x -RTMIN+11 waybar
     bindsym XF86AudioMute exec amixer set Master toggle && pkill -x -RTMIN+11 waybar
     #bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
+
+    # Audio playback control
+	bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioNext exec playerctl next
+    bindsym XF86AudioPrev exec playerctl previous
     
     # Make a screenshot & copy to clipboard (of a selectable area via Shift+Print)
     bindsym Print exec grim - | wl-copy --type image/png
@@ -250,12 +255,11 @@ bindsym $mod+r mode "resize"
 # Start waybar
 exec waybar
 
-# Start a simple notification daemon (unneeded cause it starts automatically)
-#exec mako
-#exec dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus
+# Start a dbus session
+exec dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus
 
 # Fix cursor size and theme in native wayland applications (fixes a very strange bug for me, you may want to comment it out
-seat seat0 xcursor_theme Adwaita 24
+# seat seat0 xcursor_theme Adwaita 24
 
 # Gtk theme for wayland applications workaround
 exec_always {
@@ -264,7 +268,7 @@ exec_always {
     #gsettings set org.gnome.desktop.interface document-font-name 'Fira Sans 10'
     gsettings set org.gnome.desktop.interface font-name 'Fira Sans 10'
     gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode 10'
-    #gsettings set $gnome-schema cursor-theme 'Your cursor Theme'
+    gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
 }
 
 # Run pure wayland session
