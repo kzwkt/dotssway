@@ -21,7 +21,7 @@ set $term alacritty
 # default: set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi
 # Screen locker
-set $locker 'swaylock --font FiraCode -e -f -i ~/wallpaper/voidyuri.png'
+set $locker 'swaylock --font FiraCode -e -f -i ~/wallpaper/nordmountain.jpg'
 # Lock and disable screen on shortcut
 bindsym $mod+Insert exec $locker
 ### Output configuration
