@@ -64,12 +64,13 @@ exec swayidle -w \
 
 input type:pointer {
     accel_profile flat
-    #pointer_accel -1
+    pointer_accel -0.2
 }
 
 input type:tablet_tool {
     left_handed 1
-    map_from_region 0.00001x59.2mm 56.17x92mm
+	#scroll_method on_button_down (doesnt work)
+    #map_from_region 0.00001x59.2mm 56.17x92mm
     #yes, it isn't possible to just write '0' here((
 }
 
