@@ -3,7 +3,6 @@ set number
 set ruler
 set noshowmode
 set clipboard=unnamedplus
-set tabstop=4
 
 call plug#begin()
 Plug 'arcticicestudio/nord-vim'
