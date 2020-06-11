@@ -116,11 +116,11 @@
         "interval": 5,
         "format-wifi": " {essid} ({signalStrength}%)", // Icon: wifi
         //"format-ethernet": " {ifname}: {ipaddr}/{cidr}", // Icon: ethernet
-		"format-ethernet": " {ifname}",
+        "format-ethernet": " {ifname}",
         "format-disconnected": "Disconnected",
         //"tooltip-format": "{ifname}: {ipaddr}",
-		"tooltip": false,
-	    "on-click": "cmst"
+        "tooltip": false,
+        "on-click": "cmst"
     },
 
     "sway/mode": {
