@@ -6,24 +6,24 @@ Feel free to use, don't forget to change some stuff like default user etc.
 ## Notes:
 - To have brightness control working add your user to *video* group
 
-## List of dependencies (maybe unfull):
+## List of dependencies *(maybe unfull)*:
 - sway
-  - grim
-  - slurp
-  - wl-clipboard
-  - light
-  - amixer (if not using alsa, edit the config)
-  - swaybg
-  - swayidle
-  - swaylock
-  - mako
-- alacritty
-  - xdg-utils
-- waybar
-  - keyboard layout script (if unneeded, remove such module from config)
-  - cmst
-- wofi
-- kakoune
-- connman
-- tmux
-- FiraCode and Awesome fonts
+  - grim *(for making screenshots)*
+  - slurp *(for selecting a screen area to screenshot)*
+  - wl-clipboard *(for copying screenshots to clipboard)*
+  - light *(brightness control)*
+  - amixer *(if not using alsa, edit the config of waybar and sway)*
+  - swaybg *(for wallpaper)*
+  - swayidle *(idle manager)*
+  - swaylock *(lockscreen)*
+  - mako *(notification daemon)*
+- alacritty *(terminal emulator)*
+  - xdg-utils *(for opening links in browser etc.)*
+- waybar *(flexible and beautiful polybar-like panel)*
+  - keyboard layout script *(if unneeded, remove such module from config)*
+  - cmst *(for controlling connman)*
+- wofi *(rofi-like application launcher)*
+- ~~kakoune~~ neovim *(vi-like text editor)*
+- connman *(network control daemon)*
+- tmux *(terminal multiplexer)*
+- FiraCode and Awesome5 fonts *(for text and icons)*
