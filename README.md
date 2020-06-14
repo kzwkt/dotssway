@@ -1,6 +1,5 @@
 # My dotfiles
-*And not only them.* Made to match [Nord color palette](https://github.com/arcticicestudio/nord). 
-Feel free to use, don't forget to change some stuff like default user etc. 
+*And not only them.* Made to match [Nord color palette](https://github.com/arcticicestudio/nord).
 ## Screenshot:
 ![screenshot](https://i.imgur.com/zZDF4yc.png)
 ## Notes:
