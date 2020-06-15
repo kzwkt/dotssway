@@ -1,7 +1,7 @@
 # My dotfiles
 *And not only them.* Made to match [Nord color palette](https://github.com/arcticicestudio/nord).
 ## Screenshot:
-![screenshot](https://i.imgur.com/zZDF4yc.png)
+![screenshot](https://i.imgur.com/C8yneuy.png)
 ## Notes:
 - To have brightness control working add your user to *video* group
 
