@@ -69,7 +69,6 @@ input type:pointer {
 
 input type:tablet_tool {
     left_handed 1
-	#scroll_method on_button_down (doesnt work)
     #map_from_region 0.00001x59.2mm 56.17x92mm
     #yes, it isn't possible to just write '0' here((
 }
@@ -90,8 +89,8 @@ gaps inner 10
 gaps outer -2
 smart_gaps on
 smart_borders on
-default_border none
-default_floating_border none
+default_border pixel 2
+default_floating_border pixel 2
 
 ### Key bindings
 #
@@ -108,7 +107,7 @@ default_floating_border none
     #bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle
 
     # Audio playback control
-	bindsym XF86AudioPlay exec playerctl play-pause
+    bindsym XF86AudioPlay exec playerctl play-pause
     bindsym XF86AudioNext exec playerctl next
     bindsym XF86AudioPrev exec playerctl previous
     
@@ -254,7 +253,9 @@ mode "resize" {
 bindsym $mod+r mode "resize"
 
 # Start waybar
-exec waybar
+bar {
+    swaybar_command waybar
+}
 
 # Start a dbus session
 exec dbus-daemon --session --address=unix:path=$XDG_RUNTIME_DIR/bus
