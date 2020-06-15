@@ -16,8 +16,8 @@
   - swayidle *(idle manager)*
   - swaylock *(lockscreen)*
   - mako *(notification daemon)*
-- alacritty *(terminal emulator)*
   - xdg-utils *(for opening links in browser etc.)*
+- alacritty *(terminal emulator)*
 - waybar *(flexible and beautiful polybar-like panel)*
   - keyboard layout script *(if unneeded, remove such module from config)*
   - cmst *(for controlling connman)*
