@@ -87,6 +87,10 @@ plugins=(git
 
 source $ZSH/oh-my-zsh.sh
 
+# Nord dircolors
+test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
+
+# Vim keybinds
 bindkey -v
 
 # User configuration
