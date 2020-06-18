@@ -47,7 +47,7 @@ client.unfocused	$fr3    $fr3       $ss1  $pn4      $fr3
 client.urgent		$au2	$au1       $ss1  $au1      $au2
 
 # Fix cursor size and theme in native wayland applications (fixes a very strange bug for me, you may want to comment it out
-# seat seat0 xcursor_theme Adwaita 24
+#seat seat0 xcursor_theme Adwaita 24
 
 # Gtk theme for wayland applications workaround
 exec_always {
