@@ -93,6 +93,14 @@ test -r ~/.dir_colors && eval $(dircolors ~/.dir_colors)
 # Vim keybinds
 bindkey -v
 
+# Autocompletion for Gentoo
+autoload -U compinit promptinit
+compinit
+promptinit; prompt gentoo
+
+# Autocompletion cache
+zstyle ':completion::complete:*' use-cache 1
+
 # User configuration
 
 # export MANPATH="/usr/local/man:$MANPATH"
