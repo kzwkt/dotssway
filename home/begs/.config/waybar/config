@@ -77,8 +77,7 @@
 
     "clock#date": {
         "interval": 20,
-        //"format": "{:%e %b %Y}", // Icon: calendar-alt
-		"format": "{:%e %b 20%y}", // dirty workaround
+        "format": "{:%e %b %Y}", // Icon: calendar-alt
         //"tooltip-format": "{:%e %B %Y}"
         "tooltip": false
     },
