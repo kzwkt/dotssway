@@ -9,8 +9,10 @@ include ~/.config/sway/config.d/vars
     bindsym $mod+Insert exec $locker
 
     # Brightess control
-    bindsym XF86MonBrightnessDown exec light -U 5
-    bindsym XF86MonBrightnessUp exec light -A 5
+    # bindsym XF86MonBrightnessDown exec light -U 5
+    # bindsym XF86MonBrightnessUp exec light -A 5
+    bindsym XF86MonBrightnessDown exec xbacklight -dec 5
+    bindsym XF86MonBrightnessUp exec xbacklight -inc 5
 
     # Volume control
     bindsym XF86AudioRaiseVolume exec amixer set Master 1+ && pkill -x -RTMIN+11 waybar
