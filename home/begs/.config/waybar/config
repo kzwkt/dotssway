@@ -16,9 +16,10 @@
     "height": 22,
 
     "modules-left": [
+    	"sway/mode",
         "sway/workspaces",
-        "custom/arrow10"
-        //"sway/mode"
+        "custom/arrow10",
+	"sway/window"
     ],
 
     //"modules-center": [
@@ -123,13 +124,14 @@
     },
 
     "sway/mode": {
-        "format": "<span style=\"italic\">  {}</span>", // Icon: expand-arrows-alt
-        "tooltip": false
+        "format": "<span style=\"italic\"> {}</span>", // Icon: expand-arrows-alt
+        "tooltip": false,
     },
 
     "sway/window": {
         "format": "{}",
-        "max-length": 120
+        "max-length": 30,
+	"tooltip": false
     },
 
     "sway/workspaces": {
