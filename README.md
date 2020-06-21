@@ -3,14 +3,14 @@
 ## Screenshot:
 ![screenshot](https://i.imgur.com/4vaRR4t.png)
 ## Notes:
-- To have brightness control working add your user to `video` group
+- To have brightness control working add your user to `video` group and copy udev rule from [here](https://gitlab.com/wavexx/acpilight).
 
 ## List of dependencies *(maybe unfull)*:
 - sway
   - grim *(for making screenshots)*
   - slurp *(for selecting a screen area to screenshot)*
   - wl-clipboard *(for copying screenshots to clipboard)*
-  - light *(brightness control)*
+  - acpilight *(brightness control)*
   - amixer *(if not using alsa, edit the config of waybar and sway)*
   - swaybg *(for wallpaper)*
   - swayidle *(idle manager)*
