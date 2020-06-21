@@ -49,7 +49,8 @@
 /* The whole bar */
 #waybar {
     /*background: #2e3440;*/
-    background: rgba(46, 52, 64, 0.8);
+    /*background: rgba(46, 52, 64, 0.8);*/
+    background: transparent;
     color: #d8dee9;
     font-family: FiraCode, Noto Sans, sans-serif, AnonymicePowerline Nerd Font;
     font-size: 13px;
