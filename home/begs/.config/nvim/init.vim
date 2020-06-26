@@ -4,6 +4,14 @@ set ruler
 set noshowmode
 set clipboard=unnamedplus
 
+" Tabs configuration
+set tabstop=4     " Size of a hard tabstop (ts).
+set shiftwidth=4  " Size of an indentation (sw).
+set expandtab     " Always uses spaces instead of tab characters (et).
+set softtabstop=0 " Number of spaces a <Tab> counts for. When 0, featuer is off (sts).
+set autoindent    " Copy indent from current line when starting a new line.
+set smarttab      " Inserts blanks on a <Tab> key (as per sw, ts and sts).
+
 call plug#begin()
 Plug 'arcticicestudio/nord-vim'
 Plug 'preservim/nerdtree'
@@ -29,7 +37,6 @@ nmap ++ <plug>NERDCommenterToggl
 
 colorscheme nord
 syntax on
-let g:airline_powerline_fonts = 1
 
 let g:lightline = {
                 \ 'colorscheme': 'nord',
@@ -56,6 +63,8 @@ let g:lightline = {
 
 
 
+
+" Coc configuration
 
 " TextEdit might fail if hidden is not set.
 set hidden
