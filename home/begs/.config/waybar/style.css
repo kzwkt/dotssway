@@ -73,15 +73,9 @@
     padding-right: 10px;
 }
 
-
 /* -----------------------------------------------------------------------------
  * Module styles
  * -------------------------------------------------------------------------- */
-
-/* Add the bottom border for entire bar */
-/*#waybar, #custom-alsa, #custom-keyboard-layout, #battery, #clock, #cpu, #memory, #mode, #network, #pulseaudio, #temperature, #tray, #workspaces, #custom-arrow1, #custom-arrow2, #custom-arrow3, #custom-arrow4, #custom-arrow5, #custom-arrow6, #custom-arrow7, #custom-arrow8, #custom-arrow9, #custom-arrow10 {
-    border-bottom: 2px solid #d8dee9;
-}*/
 
 #custom-alsa {
     background: #d8dee9;
