@@ -68,7 +68,10 @@
 #pulseaudio,
 #temperature,
 #custom-alsa,
-#tray
+#tray {
+    padding-left: 10px;
+    padding-right: 10px;
+}
 
 
 /* -----------------------------------------------------------------------------
@@ -196,8 +199,6 @@
 }
 
 #tray {
-    padding-left: 10px;
-    padding-right: 10px;
     background: #2e3440;
 }
 
