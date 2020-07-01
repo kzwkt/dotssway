@@ -67,8 +67,7 @@
 #network,
 #pulseaudio,
 #temperature,
-#custom-alsa,
-#tray {
+#custom-alsa {
     padding-left: 10px;
     padding-right: 10px;
 }
