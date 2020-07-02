@@ -1,7 +1,14 @@
+" Enable navigation with mouse
 set mouse=a
+
+" Show line number
 set number
 set ruler
+
+" Don't show mode (already being shown in lightline)
 set noshowmode
+
+" Yank directly to clipboard
 set clipboard=unnamedplus
 
 " Tabs configuration
@@ -13,31 +20,46 @@ set autoindent    " Copy indent from current line when starting a new line.
 set smarttab      " Inserts blanks on a <Tab> key (as per sw, ts and sts).
 
 call plug#begin()
+
+" Colorscheme (nordtheme.com)
 Plug 'arcticicestudio/nord-vim'
+
+" NERDTree
 Plug 'preservim/nerdtree'
-" FuzzyFinder (для быстрого поиска)
-Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'junegunn/fzf.vim'
-" Сoc - автодополнение 
+
+" FuzzyFinder (for quick search)
+" Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+" Plug 'junegunn/fzf.vim'
+
+" Autocompletion & linting
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-" Дополнения для NERDTree
+
+" NERDTree addons
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'scrooloose/nerdcommenter'
-" Дополнение для Git, а также иконки для NERDTree
+
+" Git addon
 Plug 'airblade/vim-gitgutter'
-" Plug 'ryanoasis/vim-devicons'
-"Plug 'vim-airline/vim-airline'
+
+" Custom statusbar
 Plug 'itchyny/lightline.vim'
 call plug#end()
 
-" В нормальном режиме Ctrl+n вызывает :NERDTree
+" In normal mode C-n calls :NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
 vmap ++ <plug>NERDCommenterToggle
 nmap ++ <plug>NERDCommenterToggl
 
+" Set colorscheme
 colorscheme nord
+
+" Enable syntax highlighting
 syntax on
 
+" Set window title
+set title
+
+" Lightline configuration (for powerline+awesome fonts)
 let g:lightline = {
                 \ 'colorscheme': 'nord',
 		\ 'component': {
