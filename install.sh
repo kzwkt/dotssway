@@ -12,46 +12,40 @@ if [ `whoami` == 'root' ]; then
     fi
 fi
 
-echo -n ">>> Copy profile file(s)? (authentication requried) (y/n) "
+echo -n ">>> Copy profile file(s) (/etc/profile.d/)? (authentication requried) (y/n) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    su -c "cp -ri ./etc/profile.d/ /etc/"
+    su -c "cp -rvi ./etc/profile.d/ /etc/"
 fi
 
-echo -n ">>> Copy .asoundrc (alsa config file)? (y/n) "
+echo -n ">>> Copy ~/.asoundrc (alsa config file)? (y/n) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -i ./home/begs/.asoundrc ~
+    cp -vi ./home/begs/.asoundrc ~
 fi
 
-echo -n ">>> Copy .local (desktop files etc?)? (y/n) "
+echo -n ">>> Copy ~/.local (desktop files etc, including osu! install/update script and osu! .desktop file (to use update script ~/.local/bin must be in PATH, see my proile script for reference))? (y/n) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -ri ./home/begs/.local/ ~
+    cp -rvi ./home/begs/.local/ ~
 fi
 
-echo -n ">>> Copy .config (general config files)? (y/n) "
+echo -n ">>> Copy ~/.config (general config files)? (y/n) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -ri ./home/begs/.config/ ~
+    cp -rvi ./home/begs/.config/ ~
 fi
 
-echo -n ">>> Copy wallpaper? (y/n) "
+echo -n ">>> Copy ~/wallpaper? (y/n) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -ri ./home/begs/wallpaper/ ~
+    cp -rvi ./home/begs/wallpaper/ ~
 fi
 
-echo -n ">>> Copy zsh config (.zshrc, .zprofile etc)? (y/n) "
+echo -n ">>> Copy zsh config (~/.zshrc, ~/.zprofile etc)? (y/n) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -i ./home/begs/.zshrc ~
-    cp -i ./home/begs/.zprofile ~
-    cp -i ./home/begs/.p10k.zsh ~
-fi
-
-echo -n ">>> Copy osu!lazer update script? (y/n) "
-read answer
-if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -i ./home/begs/updosu.sh ~
+    cp -vi ./home/begs/.zshrc ~
+    cp -vi ./home/begs/.zprofile ~
+    cp -vi ./home/begs/.p10k.zsh ~
 fi
