@@ -131,7 +131,7 @@
     "sway/window": {
         "format": "{}",
         "max-length": 30,
-	"tooltip": false
+	    "tooltip": false
     },
 
     "sway/workspaces": {
@@ -168,18 +168,18 @@
     },
 
     "temperature": {
-      "critical-threshold": 80,
-      "interval": 5,
-      //"format": "{icon} {temperatureC}°C",
-	  "format": "{icon} {temperatureC}°",
-      "format-icons": [
-          "", // Icon: temperature-empty
-          "", // Icon: temperature-quarter
-          "", // Icon: temperature-half
-          "", // Icon: temperature-three-quarters
-          ""  // Icon: temperature-full
-      ],
-      "tooltip": false
+        "critical-threshold": 90,
+        "interval": 5,
+        //"format": "{icon} {temperatureC}°C",
+	    "format": "{icon} {temperatureC}°",
+        "format-icons": [
+            "", // Icon: temperature-empty
+            "", // Icon: temperature-quarter
+            "", // Icon: temperature-half
+            "", // Icon: temperature-three-quarters
+            ""  // Icon: temperature-full
+        ],
+        "tooltip": false
     },
 
     "custom/alsa": {
@@ -201,38 +201,47 @@
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow2": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow3": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow4": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow5": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow6": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow7": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow8": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow9": {
         "format": "",
         "tooltip": false
     },
+
     "custom/arrow10": {
         "format": "",
         "tooltip": false
