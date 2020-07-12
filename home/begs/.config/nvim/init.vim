@@ -36,10 +36,13 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 " NERDTree addons
 " Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-Plug 'scrooloose/nerdcommenter'
+" Plug 'scrooloose/nerdcommenter'
 
 " Git addon
-Plug 'airblade/vim-gitgutter'
+" Plug 'airblade/vim-gitgutter'
+
+" Diff for VCS
+Plug 'mhinz/vim-signify'
 
 " Custom statusbar
 Plug 'itchyny/lightline.vim'
@@ -47,8 +50,13 @@ call plug#end()
 
 " In normal mode C-n calls :NERDTree
 nmap <C-n> :NERDTreeToggle<CR>
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggl
+"nmap <C-n> :Vexplore<CR>
+"vmap ++ <plug>NERDCommenterToggle
+"nmap ++ <plug>NERDCommenterToggl
+
+" NERDTree settings
+let g:NERDTreeDirArrowExpandable = ''
+let g:NERDTreeDirArrowCollapsible = ''
 
 " Set colorscheme
 colorscheme nord
@@ -97,7 +105,6 @@ set nowritebackup
 
 " Give more space for displaying messages.
 "set cmdheight=2
-set cmdheight=1
 
 " Having longer updatetime (default is 4000 ms = 4 s) leads to noticeable
 " delays and poor user experience.
