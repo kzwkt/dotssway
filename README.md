@@ -17,6 +17,7 @@
   - swaylock *(lockscreen)*
   - mako *(notification daemon)*
   - xdg-utils *(for opening links in browser etc.)*
+  - playerctl *(playback control via shortcuts)*   
 - alacritty *(terminal emulator)*
 - waybar *(flexible and beautiful polybar-like panel)*
   - keyboard layout script *(if unneeded, remove such module from config)*
