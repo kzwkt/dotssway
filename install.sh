@@ -2,7 +2,7 @@
 echo "Copying dotfiles to their relative locations..."
 
 if [ `whoami` == 'root' ]; then
-    echo -n "!!! Do you REALLY want to install this dotfiles AS ROOT? (y/n) "
+    echo -n "!!! Do you REALLY want to install this dotfiles AS ROOT? (y/N) "
     read answer
     if [ "$answer" != "${answer#[Yy]}" ]; then
         echo "Continuing..."
@@ -12,31 +12,31 @@ if [ `whoami` == 'root' ]; then
     fi
 fi
 
-echo -n ">>> Copy profile file(s) (/etc/profile.d/)? (authentication requried) (y/n) "
+echo -n ">>> Copy /etc (profile files etc.)? (authentication requried) (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    su -c "cp -rvi ./etc/profile.d/ /etc/"
+    su -c "cp -rvi ./etc/* /etc/"
 fi
 
-echo -n ">>> Copy ~/.asoundrc (alsa config file)? (y/n) "
+echo -n ">>> Copy ~/.asoundrc (alsa config file)? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -vi ./home/begs/.asoundrc ~
 fi
 
-echo -n ">>> Copy ~/.local (desktop files etc, including osu! install/update script and osu! .desktop file (to use update script ~/.local/bin must be in PATH, see my proile script for reference))? (y/n) "
+echo -n ">>> Copy ~/.local (desktop files etc, including osu! install/update script and osu! .desktop file (to use update script ~/.local/bin must be in PATH, see my proile script for reference))? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -rvi ./home/begs/.local/ ~
 fi
 
-echo -n ">>> Copy ~/.config (general config files)? (y/n) "
+echo -n ">>> Copy ~/.config (general config files for Sway etc.)? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -rvi ./home/begs/.config/ ~
 fi
 
-echo -n ">>> Copy ~/wallpaper? (y/n) "
+echo -n ">>> Copy ~/wallpaper? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -rvi ./home/begs/wallpaper/ ~
