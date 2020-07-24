@@ -23,7 +23,7 @@
   - keyboard layout script *(if unneeded, remove such module from config)*
   - cmst *(for controlling connman)*
 - wofi *(rofi-like application launcher)*
-- ~~kakoune~~ neovim *(vi-like text editor)*
+- neovim *(vi-like text editor)*
 - connman *(network control daemon)*
 - tmux *(terminal multiplexer)*
 - FiraCode and Awesome5 fonts *(for text and icons)*
