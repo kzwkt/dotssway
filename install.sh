@@ -34,6 +34,8 @@ echo -n ">>> Copy ~/.config (general config files for Sway etc.)? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -rvi ./home/begs/.config/ ~
+    # Add an execution permission to Waybar layout script so it will work out of the box
+    chmod +x ~/.config/waybar/layout.sh
 fi
 
 echo -n ">>> Copy ~/wallpaper? (y/N) "
