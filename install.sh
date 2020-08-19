@@ -1,5 +1,8 @@
 #!/bin/sh
-echo "Copying dotfiles to their relative locations..."
+
+# Get a path to script so we can install dotfiles not relying on relative path
+BASEDIR="$(dirname "$(readlink -f $0)")"
+echo "Copying dotfiles to their appropriate locations..."
 
 if [ `whoami` == 'root' ]; then
     echo -n "!!! Do you REALLY want to install this dotfiles AS ROOT? (y/N) "
@@ -15,19 +18,19 @@ fi
 echo -n ">>> Copy /etc (profile files etc.)? (authentication requried) (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    su -c "cp -rvi ./etc/* /etc/"
+    su -c "cp -rvi $BASEDIR/etc/* /etc/"
 fi
 
 echo -n ">>> Copy ~/.asoundrc (alsa config file)? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -vi ./home/begs/.asoundrc ~
+    cp -vi $BASEDIR/home/begs/.asoundrc ~
 fi
 
 echo -n ">>> Copy ~/.config (general config files for Sway etc.)? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -rvi ./home/begs/.config/ ~
+    cp -rvi $BASEDIR/home/begs/.config/ ~
     # Add an execution permission to Waybar layout script so it will work out of the box
     chmod +x ~/.config/waybar/layout.sh
 fi
@@ -35,13 +38,13 @@ fi
 echo -n ">>> Copy ~/wallpaper? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -rvi ./home/begs/wallpaper/ ~
+    cp -rvi $BASEDIR/home/begs/wallpaper/ ~
 fi
 
 echo -n ">>> Copy zsh config (~/.zshrc, ~/.zprofile etc)? (y/n) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -vi ./home/begs/.zshrc ~
-    cp -vi ./home/begs/.zprofile ~
-    cp -vi ./home/begs/.p10k.zsh ~
+    cp -vi $BASEDIR/home/begs/.zshrc ~
+    cp -vi $BASEDIR/home/begs/.zprofile ~
+    cp -vi $BASEDIR/home/begs/.p10k.zsh ~
 fi
