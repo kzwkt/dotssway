@@ -1,8 +1,0 @@
-[Desktop Entry]
-Name=osu!lazer
-Comment=Rhythm game
-Exec=/usr/bin/env DRI_PRIME=1 /home/begs/osu/osu.Desktop/bin/Release/netcoreapp3.1/osu!
-Icon=/home/begs/osu/osu.Desktop/lazer.ico
-Terminal=false
-Type=Application
-Categories=Game;
