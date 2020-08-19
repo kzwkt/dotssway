@@ -24,12 +24,6 @@ if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -vi ./home/begs/.asoundrc ~
 fi
 
-echo -n ">>> Copy ~/.local (desktop files etc, including osu! install/update script and osu! .desktop file (to use update script ~/.local/bin must be in PATH, see my proile script for reference))? (y/N) "
-read answer
-if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -rvi ./home/begs/.local/ ~
-fi
-
 echo -n ">>> Copy ~/.config (general config files for Sway etc.)? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
