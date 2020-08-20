@@ -5,5 +5,5 @@ border-color=#d8dee9
 border-radius=0
 margin=10,10,10
 default-timeout=3000
-font=FiraCode 10
+font=Iosevka 10
 progress-color=source #d08770
