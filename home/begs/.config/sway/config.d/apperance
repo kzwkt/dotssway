@@ -12,7 +12,7 @@ default_border pixel 2
 default_floating_border pixel 2
 
 # Titlebar font
-font FiraCode 10
+font Iosevka 10
 
 # Titlebar settings
 titlebar_border_thickness 0
@@ -41,10 +41,10 @@ set $au5 #b48ead
 
 ### Colors (see man 5 sway)
 # class		        border  background text  indicator child_border
-client.focused		$ss1    $ss1       $pn1  $ss3      $ss1
+client.focused          $ss1    $ss1       $pn1  $ss3      $ss1
 client.focused_inactive $au4    $au4       $pn1  $fr1      $au4
-client.unfocused	$fr3    $fr3       $ss1  $pn4      $fr3
-client.urgent		$au2	$au1       $ss1  $au1      $au2
+client.unfocused        $fr3    $fr3       $ss1  $pn4      $fr3
+client.urgent           $au2	$au1       $ss1  $au1      $au2
 
 # Fix cursor size and theme in native wayland applications (fixes a very strange bug for me, you may want to comment it out
 #seat seat0 xcursor_theme Adwaita 24
@@ -54,7 +54,7 @@ exec_always {
     gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
     gsettings set org.gnome.desktop.interface icon-theme 'Arc'
     #gsettings set org.gnome.desktop.interface document-font-name 'Fira Sans 10'
-    gsettings set org.gnome.desktop.interface font-name 'Fira Sans 10'
-    gsettings set org.gnome.desktop.interface monospace-font-name 'FiraCode 10'
+    gsettings set org.gnome.desktop.interface font-name 'Sans Serif 10'
+    gsettings set org.gnome.desktop.interface monospace-font-name 'Iosevka 10'
     gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
 }
