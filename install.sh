@@ -21,12 +21,6 @@ if [ "$answer" != "${answer#[Yy]}" ]; then
     su -c "cp -rvi $BASEDIR/etc/* /etc/"
 fi
 
-echo -n ">>> Copy ~/.asoundrc (alsa config file)? (y/N) "
-read answer
-if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -vi $BASEDIR/home/begs/.asoundrc ~
-fi
-
 echo -n ">>> Copy ~/.config (general config files for Sway etc.)? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
@@ -39,12 +33,4 @@ echo -n ">>> Copy ~/wallpaper? (y/N) "
 read answer
 if [ "$answer" != "${answer#[Yy]}" ]; then
     cp -rvi $BASEDIR/home/begs/wallpaper/ ~
-fi
-
-echo -n ">>> Copy zsh config (~/.zshrc, ~/.zprofile etc)? (y/n) "
-read answer
-if [ "$answer" != "${answer#[Yy]}" ]; then
-    cp -vi $BASEDIR/home/begs/.zshrc ~
-    cp -vi $BASEDIR/home/begs/.zprofile ~
-    cp -vi $BASEDIR/home/begs/.p10k.zsh ~
 fi
