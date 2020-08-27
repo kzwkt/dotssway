@@ -1,7 +1,7 @@
 # My dotfiles
 *And not only them.* Made to match [Nord color palette](https://github.com/arcticicestudio/nord).
 ## Screenshot:
-![screenshot](https://i.imgur.com/u0yclUO.png)
+![screenshot](https://i.imgur.com/9qBPJL8.png)
 ## Notes:
 - To have brightness control working add your user to `video` group and copy udev rule from [here](https://gitlab.com/wavexx/acpilight).
 
