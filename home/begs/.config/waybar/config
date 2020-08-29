@@ -19,7 +19,7 @@
     	"sway/mode",
         "sway/workspaces",
         "custom/arrow10",
-	"sway/window"
+	    "sway/window"
     ],
 
     //"modules-center": [
