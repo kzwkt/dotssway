@@ -1,0 +1,16 @@
+#!/bin/sh
+
+# Start in a current directory
+file="${PWD}"
+
+while [ -d "${file}" ]; do
+    # Call wofi
+    file="$(ls -ap | wofi -d -p $PWD -k /dev/null)"
+    # Exit if nothing selected
+    if [ "${file}" = "" ]; then exit; fi
+    # cd to directory selected in wofi
+    cd "${file}"
+done
+
+# Open a file
+xdg-open "${file}"
