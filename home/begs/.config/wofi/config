@@ -1,6 +1,7 @@
 show=drun
-width=600
-height=300
+location=top_right
+width=300
+height=200
 allow_images=true
 allow_markup=true
 term=alacritty
