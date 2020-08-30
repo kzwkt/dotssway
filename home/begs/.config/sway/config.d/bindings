@@ -6,7 +6,7 @@ include ~/.config/sway/config.d/vars
 # Basics:
 #
     # Lock the screen
-    bindsym $mod+Alt+l exec $locker
+    bindsym --to-code $mod+Alt+l exec $locker
 
     # Brightess control
     # bindsym XF86MonBrightnessDown exec light -U 5
@@ -26,11 +26,11 @@ include ~/.config/sway/config.d/vars
     bindsym XF86AudioPrev exec playerctl previous
     
     # Make a screenshot & copy to clipboard (of a selectable area via Shift+Print)
-    bindsym $mod+p exec grim - | wl-copy --type image/png
-    bindsym $mod+Shift+p exec grim -g "$(slurp)" - | wl-copy --type image/png
+    bindsym --to-code $mod+p exec grim - | wl-copy --type image/png
+    bindsym --to-code $mod+Shift+p exec grim -g "$(slurp)" - | wl-copy --type image/png
     # Make a screenshot & save as png file
-    bindsym $mod+Alt+p exec grim ~/screenshots/$(date +'%s_grim.png')
-    bindsym $mod+Alt+Shift+p exec grim -g "$(slurp)" ~/screenshots/$(date +'%s_grim.png')
+    bindsym --to-code $mod+Alt+p exec grim ~/screenshots/$(date +'%s_grim.png')
+    bindsym --to-code $mod+Alt+Shift+p exec grim -g "$(slurp)" ~/screenshots/$(date +'%s_grim.png')
     
     # Start a terminal
     bindsym $mod+Return exec $term
