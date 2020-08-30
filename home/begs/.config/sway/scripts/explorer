@@ -3,14 +3,13 @@
 # Start in a current directory
 file="${PWD}"
 
-while [ -d "${file}" ]; do
+while true; do
     # Call wofi
     file="$(ls -ap | wofi -d -p $PWD -k /dev/null)"
     # Exit if nothing selected
     if [ "${file}" = "" ]; then exit; fi
-    # cd to directory selected in wofi
+    # If a file is selected, open it
+    if [ -f "${file}" ]; then xdg-open "${file}"; exit; fi
+    # And if directory is selected, cd to it
     cd "${file}"
 done
-
-# Open a file
-xdg-open "${file}"
