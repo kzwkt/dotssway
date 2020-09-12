@@ -15,4 +15,4 @@ set $term alacritty
 # default: set $menu dmenu_path | dmenu | xargs swaymsg exec --
 set $menu wofi
 # Screen locker
-set $locker 'swaylock --font FiraCode -e -f -i ~/wallpaper/nordmountain.jpg'
+set $locker 'swaylock --font Iosevka -e -f -i ~/wallpaper/nyantoo.png'
