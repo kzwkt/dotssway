@@ -28,14 +28,8 @@ include ~/.config/sway/config.d/vars
     
     # Legacy
     # Make a screenshot & copy to clipboard (of a selectable area via Shift+Print)
-    #bindsym --to-code $mod+p exec grim - | wl-copy --type image/png
-    #bindsym --to-code $mod+Shift+p exec grim -g "$(slurp)" - | wl-copy --type image/png
-    # Make a screenshot & save as png file
-    #bindsym --to-code $mod+Alt+p exec grim ~/screenshots/$(date +'%s_grim.png')
-    #bindsym --to-code $mod+Alt+Shift+p exec grim -g "$(slurp)" ~/screenshots/$(date +'%s_grim.png')
-    
-    # Run new screenshot script
-    bindsym --to-code $mod+p exec ~/.config/sway/scripts/screenshot
+    bindsym --to-code $mod+p exec grim - | wl-copy --type image/png
+    bindsym --to-code $mod+Shift+p exec grim -g "$(slurp)" - | wl-copy --type image/png
     
     # Start a terminal
     bindsym $mod+Return exec $term
