@@ -54,7 +54,7 @@ exec_always {
     gsettings set org.gnome.desktop.interface gtk-theme 'Nordic'
     gsettings set org.gnome.desktop.interface icon-theme 'Arc'
     #gsettings set org.gnome.desktop.interface document-font-name 'Fira Sans 10'
-    gsettings set org.gnome.desktop.interface font-name 'Sans Serif 10'
+    gsettings set org.gnome.desktop.interface font-name 'Liberation Sans 10'
     gsettings set org.gnome.desktop.interface monospace-font-name 'Iosevka 10'
     gsettings set org.gnome.desktop.interface cursor-theme 'Adwaita'
 }

@@ -5,7 +5,7 @@
 # Read `man 5 sway` for a complete reference.
 
 # Run pure wayland session
-# xwayland disable
+#xwayland disable
 
 include @sysconfdir@/sway/config.d/*
 include ~/.config/sway/config.d/*

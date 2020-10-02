@@ -5,11 +5,11 @@ include ~/.config/sway/config.d/vars
 #
 # Basics:
 #
-    # Run power menu
-    bindsym --to-code $mod+i exec ~/.config/sway/scripts/powermenu
+    # Run powermenu
+    bindsym --to-code $mod+i exec $powermenu
 
     # Run file opener script
-    bindsym --to-code $mod+o exec ~/.config/sway/scripts/explorer
+    bindsym --to-code $mod+o exec $explorer
 
     # Brightess control
     bindsym XF86MonBrightnessDown exec light -U 5

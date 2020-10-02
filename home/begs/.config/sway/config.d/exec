@@ -1,0 +1,4 @@
+# Start a dbus session
+exec $dbus
+# Execute swayidle
+exec $idle
