@@ -120,7 +120,7 @@
         "format-disconnected": "Disconnected",
         //"tooltip-format": "{ifname}: {ipaddr}",
         "tooltip": false,
-        "on-click": "cmst"
+        //"on-click": "cmst"
     },
 
     "sway/mode": {
