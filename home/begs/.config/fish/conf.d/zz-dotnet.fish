@@ -1,2 +1,2 @@
-set -g DOTNET_ROOT $HOME/dotnet
-set -g PATH $HOME/dotnet $PATH
+set -gx DOTNET_ROOT $HOME/.dotnet
+set -gx PATH $HOME/.dotnet $PATH
