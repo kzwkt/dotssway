@@ -2,3 +2,5 @@
 exec $dbus
 # Execute swayidle
 exec $idle
+# Restore default brightness
+exec light -S $brightness
